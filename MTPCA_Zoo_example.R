@@ -15,6 +15,7 @@ mu = mod$mu
 Z <- gradient_descent_all(animals, rep("B", 15), mu, lambda, U, 1)
 
 library(ggplot2)
+library(ggrepel)
 
 # Component scores
 Z_scatter = data.frame(PC2 = Z[,2], PC3 = Z[,3], name = zoo$animal_name)
