@@ -239,6 +239,8 @@ MTPCA = function(df, types, d=NULL, varnum=ncol(df), sigma_norm=NULL){
 # Estimating the component scores
 ###
 
+library(mvtnorm)
+
 # log_likeli computes the conditional log-likelihood of the component values z
 # zi is the z-vector of dimension d
 # xi is the corresponding x-vector of dimension p
